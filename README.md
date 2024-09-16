@@ -1,2 +1,2 @@
 # CSC271_Projects
-This is a place for assignments for CSC 271
+This is a place for CSC 271 Assignments
