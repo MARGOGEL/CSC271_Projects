@@ -1,0 +1,47 @@
+h1, h2 {
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    color: #111417;
+}
+#features {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #2071a0;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 30px;
+}
+body {
+    background-color: #ece6e6;
+    font-family: 'Georgia', 'Times New Roman', serif; 
+}
+
+p {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 18px;
+    color: #111417;
+}
+
+
+
+a:link {
+color: rgb(44, 98, 126);
+}
+  
+a:visited {
+color: rgb(12, 17, 41);
+}
+
+a:hover {
+color: rgb(199, 121, 47);
+}
+
+a:active {
+color: rgb(235, 126, 47);
+}
+
+
+.container {
+display: flex; 
+justify-content: center; 
+align-items: center;
+}
