@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Partnerships</title>
     <meta charset="UTF-8">
+    <title>How Homely Works</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Partnerships</h1>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/images/namely.png" alt="Homely Logo" class="logo-img" width="75" height="95">
+            </div>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link active">Homepage</a>
+                <a href="partners.html" class="nav-link">Partnerships</a>
+                <a href="third_page.html" class="nav-link">How It Works</a>
+                <a href="fourth_page.html" class="nav-link">Sign Up</a>
+            </nav>
+        </div>
+    </header>
 
-    <img src="./images/homethree.jpeg" height="300" width="500" alt="Customers Applying for a Mortgage">
-    <br>
-    <br> 
+    <main>
+        <h1>Partnerships</h1>
+        
+        <div class="container">
+            <img src="/images/home.jpeg"  height="300" width="500" alt="Piggy bank">
+        </div>
 
-    <h4>Who are our partners?</h4>
-    <p>
-        Homely partners with banks and financial institutions of all sizes to give homebuyers access to an online mortgage marketplace.
-        Our platform allows homebuyers to apply for mortgages and compare offers from various lenders using a marketplace bidding system. 
-        We allow mortgage loan officers at competing banks to view each mortgage application, negotiate, and offer their best terms to 
-        the prospective homebuyer. While we do partner with larger banks, we hope to forge more partnerships with many local banks to 
-        create a system of community benefit. 
-    </p>
+        <h4>Who are our partners?</h4>
+        <p>
+            Homely partners with banks and financial institutions of all sizes to give homebuyers access to an online mortgage marketplace.
+            Our platform allows homebuyers to apply for mortgages and compare offers from various lenders using a marketplace bidding system.
+            We allow mortgage loan officers at competing banks to view each mortgage application, negotiate, and offer their best terms to
+            the prospective homebuyer. While we do partner with larger banks, we hope to forge more partnerships with many local banks to
+            create a system of community benefit.
+        </p>
 
-    <form action="get">
-        <h2>Interested in partnering with us?</h2>
+        <form action="get">
+            <h2>Interested in partnering with us?</h2>
 
-        <p>What is the name of the bank/financial institution you are affiliated with?</p>
-        <textarea name="institution" placeholder="Enter name here..."></textarea>
+            <p>What is the name of the bank/financial institution you are affiliated with?</p>
+            <textarea name="institution" placeholder="Enter name here..."></textarea>
+
+            <p>What is your typical mortgage loan size?</p>
+            <input type="checkbox" id="loanprice1" name="loanprice" value="$150000-$500000">
+            <label for="loanprice1">$150,000 - $500,000</label><br>
+
+            <input type="checkbox" id="loanprice2" name="loanprice" value="$500000-$750000">
+            <label for="loanprice2">$500,000 - $750,000</label><br>
+
+            <input type="checkbox" id="loanprice3" name="loanprice" value="$750000-$1M">
+            <label for="loanprice3">$750,000 - $1M</label><br>
+
+            <input type="checkbox" id="loanprice4" name="loanprice" value="$1M-2.5M+">
+            <label for="loanprice4">$1M - 2.5M+</label><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h3>Cost of Platform for Lenders</h3>
+        <table border="2">
+            <tr>
+                <th>Small Banks</th>
+                <td>Small banks can use our platform at a monthly subscription price of $250 USD.</td>
+            </tr>
+            <tr>
+                <th>Medium Banks</th>
+                <td>Medium banks may pay a flat-rate fee of 0.08% of the price of each home mortgage.</td>
+            </tr>
+            <tr>
+                <th>Large Banks</th>
+                <td>Large banks may pay a flat-rate fee of 0.05% of the price of each home mortgage.</td>
+            </tr>
+        </table>
+
         <br>
-        <br>
 
-        <p>What is your typical mortgage loan size?</p>
-        <input type="checkbox" id="loanprice1" name="loanprice" value="$150000-$500000">
-        <label for="loanprice1">$150,000 - $500,000</label><br>
+        <iframe src="https://www.youtube.com/embed/-O6mtZePMVE" width="420" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-        <input type="checkbox" id="loanprice2" name="loanprice" value="$500000-$750000">
-        <label for="loanprice2">$500,000 - $750,000</label><br>
+        <br><br>
 
-        <input type="checkbox" id="loanprice3" name="loanprice" value="$750000-$1M">
-        <label for="loanprice3">$750,000 - $1M</label><br>
+        <a href="index.html">Return To Homepage</a><br>
+        <a href="partners.html">Partnerships</a><br>
+        <a href="third_page.html">How It Works</a><br>
+        <a href="fourth_page.html">Sign Up</a>
+    </main>
 
-        <input type="checkbox" id="loanprice4" name="loanprice" value="$1M-2.5M+">
-        <label for="loanprice4">$1M - 2.5M+</label><br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-
-    <h3>Cost of Platform for Lenders</h3>
-    <table border="2">
-        <tr>
-            <th>Small Banks</th>
-            <td>Small banks can use our platform at a monthly subscription price of $250 USD.</td>
-        </tr>
-        <tr>
-            <th>Medium Banks</th>
-            <td>Medium banks may pay a flat-rate fee of 0.08% of the price of each home mortgage.</td>
-        </tr>
-        <tr>
-            <th>Large Banks</th>
-            <td>Large banks may pay a flat-rate fee of 0.05% of the price of each home mortgage.</td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <iframe src="https://www.youtube.com/embed/-O6mtZePMVE" width="420" height="315"></iframe>
-
-    <br>
-    <br>
-    <a href="index.html">Return To Homepage</a><br>
-    <a href="partners.html">Partnerships</a>
-    <br>
-    <br>
 </body>
 </html>

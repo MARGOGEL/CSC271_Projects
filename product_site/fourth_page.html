@@ -1,89 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sign Up</title>
     <meta charset="UTF-8">
+    <title>How Homely Works</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-
-<header>
-    <div class="header">
-        <img src="images/logo.png" alt="Homely Logo" class="logo">
-        <nav>
-            <a href="index.html" class="active">Homepage</a>
-            <br>
-            <a href="partners.html">Partnerships</a>
-            <br>
-            <a href="third_page.html">How It Works</a>
-            <br>
-            <a href="fourth_page.html"> Sign Up</a>
-        </nav>
-    </div>
-</header>
-
-
 <body>
-    <h1>Register For An Account</h1>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/images/namely.png" alt="Homely Logo" class="logo-img" width="75" height="95">
+            </div>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link active">Homepage</a>
+                <a href="partners.html" class="nav-link">Partnerships</a>
+                <a href="third_page.html" class="nav-link">How It Works</a>
+                <a href="fourth_page.html" class="nav-link">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <main>
+            <h1>Register For An Account</h1>
+        
+            <p>Join Homely today, and begin the homebuying process instantly. To start, choose an account username and password, and enter your name.</p>
+
+            <form action="Signup" method="post" class="signup-form">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                </div>
+            
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                </div>
+            
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password">
+                </div>
+            
+                <div class="form-group">
+                    <input type="submit" value="Sign Up">
+                </div>
 
 
-    <p> Join Homely today, and begin the homebuying process instantly. To start, choose an account username and password, and enter your name.</p>
-    <br>
-    <br>
-    <div>
+            </form>
+    
 
-        <form action="Signup" method="post">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name"><br><br>
 
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name"><br><br>
+        <br>
+        <br>
+        <div class="container">
+            <img src="/IMAGES/piggybank.jpg" class="image" height="300" width="500" alt="Piggy bank">
+        </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email address"><br><br>
+        <br><br>
+        
+        <br>
+        <br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Create a password"><br><br>
-
-            <input type="submit" value="Sign Up">
-        </form>
-
+        <a href="index.html">Return To Homepage</a><br>
+        <a href="partners.html">Partnerships</a><br>
+        <a href="third_page.html">How It Works</a><br>
+        <a href="fourth_page.html">Sign Up</a>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <br>
-    <br>
-
-        <img src="/IMAGES/piggybank.jpg" height="300" width="500" alt="Piggy bank">
-   
-    <br>
-    <a href="index.html">Return To Homepage</a>
-    <br>
-    <a href="partners.html">Partnerships</a>
-    <br>
-    <a href="third_page.html">How It Works</a>
-    <br>
-    <a href="fourth_page.html"> Sign Up</a>
-    <br>
-    <br>
-    <br>
+    </main>
+    
 </body>
 </html>
-

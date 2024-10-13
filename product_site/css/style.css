@@ -3,13 +3,15 @@ h1, h2 {
     font-size: 30px;
     color: #111417;
 }
+
 #features {
     font-family: Georgia, "Times New Roman", serif;
     color: #2071a0;
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
     margin-top: 30px;
 }
+
 body {
     background-color: #ece6e6;
     font-family: 'Georgia', 'Times New Roman', serif; 
@@ -22,26 +24,140 @@ p {
 }
 
 
-
 a:link {
-color: rgb(44, 98, 126);
+    color: rgb(44, 98, 126);
 }
-  
 a:visited {
-color: rgb(12, 17, 41);
+    color: rgb(12, 17, 41);
 }
-
 a:hover {
-color: rgb(199, 121, 47);
+    color: rgb(199, 121, 47);
 }
-
 a:active {
-color: rgb(235, 126, 47);
+    color: rgb(235, 126, 47);
 }
 
 
 .container {
-display: flex; 
-justify-content: center; 
-align-items: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.image {
+    display: inline-block;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.content {
+    align-items: center;
+    width: 80%;  
+    max-width: 1200px;  
+    background-color: #9e5231;  
+    padding: 20px;  
+    margin: 0 auto;  
+    float: left;  
+}
+
+
+.header-container {
+    overflow: hidden;
+    background-color: #5d4e46; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 75px;
+    height: 95px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-link {
+    float: left;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-family: 'Georgia', 'Times New Roman', serif; 
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(199, 121, 47); 
+    background-color: transparent;
+}
+
+.nav-link.active {
+    background-color: #c89e76; 
+    color: #fff;
+}
+
+.nav-link:active {
+    background-color: #24cbc6; 
+    color: #fff;
+}
+
+
+.signup-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding-left: 20px; 
+    }
+
+    .nav-link {
+        display: block; 
+        margin-bottom: 10px; 
+        padding: 10px 0; 
+        text-align: left; 
+    }
+    .content {
+        width: 100%;
+        padding: 10px; 
+        float: none; 
+        background-color: #9e5231; 
+    }
+
+    h1, h2, p {
+        font-size: larger;
+    }
+
+
+    .image {
+        width: 100%; /* Scale images to fit screen width */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
