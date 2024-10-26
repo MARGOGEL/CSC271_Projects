@@ -37,7 +37,6 @@ function generateRecommendedLoans() {
         Credit Score Requirement: ${creditScore}+
       `;
   
-      // Create Compare button and add event listener
       let compareButton = document.createElement("button");
       compareButton.classList.add("compare-button");
       compareButton.textContent = "Compare";
@@ -57,7 +56,6 @@ function generateRecommendedLoans() {
       offer.style.backgroundColor = isSelected ? "#e0f0ff" : "#f9f9f9";
     });
   
-    // Display comparison message
     document.getElementById("offers-container").insertAdjacentHTML("beforeend", `
       <div class="comparison-info">
         <p>Comparing ${selectedLender.name} with an interest rate of ${(selectedRate * 100 * 12).toFixed(2)}% and monthly payment of $${selectedPayment.toFixed(2)}.</p>
