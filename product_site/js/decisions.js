@@ -1,6 +1,8 @@
 document.getElementById("eligibility-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
+    //I finished this late and didn't get to submit to Brightspace
+    //If you're seeing this, I finished it anyway and added it my product_site_v8 branch
     const age = parseInt(document.getElementById("age").value);
     const creditScore = parseInt(document.getElementById("credit-score").value);
     const income = parseInt(document.getElementById("income").value);
@@ -8,24 +10,12 @@ document.getElementById("eligibility-form").addEventListener("submit", function(
 
     const feedback = [];
 
-    if (age < 18) {
-        feedback.push("Age requirement not met.");
-    }
+    feedback.push(validateAge(age));
+    feedback.push(validateCreditScore(creditScore));
+    feedback.push(validateIncome(income));
+    feedback.push(validateEmploymentStatus(employmentStatus));
 
-    if (creditScore < 600) {
-        feedback.push("Credit score requirement not met.");
-    }
-
-    if (income < 30000) {
-        feedback.push("Income requirement not met.");
-    }
-
-    if (employmentStatus === "unemployed") {
-        feedback.push("Employment status not met.");
-    }
-//Determining whether the user qualifies to join Homely if their age, credit score, income, and employment status are acceptable using the AND operator
-//All the conditions must be true for the user to be eligible to join the platform
-    const allCriteriaMet = (age >= 18 && creditScore >= 600 && income >= 30000 && employmentStatus === "employed");
+    const allCriteriaMet = checkAllCriteria(age, creditScore, income, employmentStatus);
 
     const resultsSection = document.getElementById("results");
     resultsSection.style.display = "block";
@@ -36,10 +26,39 @@ document.getElementById("eligibility-form").addEventListener("submit", function(
     if (allCriteriaMet) {
         feedback.push("Congratulations! You meet the eligibility criteria. To sign up for a Homely account, click <a href='homebuyer.html'>here</a>");
     }
+    
+    displayFeedback(feedback);
+});
+
+function validateAge(age) {
+    return age < 18 ? "Age requirement not met." : "";
+}
+
+function validateCreditScore(creditScore) {
+    return creditScore < 600 ? "Credit score requirement not met." : "";
+}
+
+function validateIncome(income) {
+    return income < 30000 ? "Income requirement not met." : "";
+}
+
+function validateEmploymentStatus(employmentStatus) {
+    return employmentStatus === "unemployed" ? "Employment status not met." : "";
+}
+
+function checkAllCriteria(age, creditScore, income, employmentStatus) {
+    return age >= 18 && creditScore >= 600 && income >= 30000 && employmentStatus === "employed";
+}
+
+function displayFeedback(feedback) {
+    const feedbackContainer = document.getElementById("feedback");
+    let feedbackMessages = '';
 
     feedback.forEach(message => {
-        const messageElement = document.createElement("p");
-        messageElement.innerHTML = message;  // 
-        feedbackContainer.appendChild(messageElement);
+        if (message !== '') {
+            feedbackMessages += message;
+        }
     });
-});
+
+    feedbackContainer.innerHTML = feedbackMessages;
+}
