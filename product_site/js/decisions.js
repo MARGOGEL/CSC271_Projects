@@ -3,12 +3,14 @@ document.getElementById("eligibility-form").addEventListener("submit", function(
 
     //I finished this late and didn't get to submit to Brightspace
     //If you're seeing this, I finished it anyway and added it my product_site_v8 branch
+    //I rushed through the code section but didn't have time to answer the sections thoroughly or add comments to the js file
     const age = parseInt(document.getElementById("age").value);
     const creditScore = parseInt(document.getElementById("credit-score").value);
     const income = parseInt(document.getElementById("income").value);
     const employmentStatus = document.getElementById("employment-status").value;
 
     const feedback = [];
+
     feedback.push(validateAge(age));
     feedback.push(validateCreditScore(creditScore));
     feedback.push(validateIncome(income));
@@ -21,7 +23,9 @@ document.getElementById("eligibility-form").addEventListener("submit", function(
 
     const feedbackContainer = document.getElementById("feedback");
     feedbackContainer.innerHTML = "";
-
+    
+    //Another Comment
+    
     if (allCriteriaMet) {
         feedback.push("Congratulations! You meet the eligibility criteria. To sign up for a Homely account, click <a href='homebuyer.html'>here</a>");
     }
