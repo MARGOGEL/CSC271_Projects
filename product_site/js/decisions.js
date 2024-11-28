@@ -9,7 +9,6 @@ document.getElementById("eligibility-form").addEventListener("submit", function(
     const employmentStatus = document.getElementById("employment-status").value;
 
     const feedback = [];
-
     feedback.push(validateAge(age));
     feedback.push(validateCreditScore(creditScore));
     feedback.push(validateIncome(income));
