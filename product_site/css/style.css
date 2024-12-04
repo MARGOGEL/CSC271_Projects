@@ -138,8 +138,6 @@ a:active {
 }
 
 
-
-
 @media screen and (max-width: 600px) {
     .navbar {
         display: block;
@@ -189,21 +187,6 @@ a:active {
     background-color: #0056b3;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .offer {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -215,7 +198,7 @@ a:active {
   }
   
   .offer:hover {
-    transform: scale(1.02);
+    transform: scale(1);
   }
   
   .offer strong {
